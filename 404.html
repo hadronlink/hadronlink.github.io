@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection</title>
+
+    <script type="text/javascript">
+        // Checa se está sendo aberto no navegador
+        if (!navigator.standalone && !window.matchMedia('(display-mode: standalone)').matches) {
+            // Monta a URL da loja de aplicativos
+            var storeURL = "https://app.hadronlink.com/store";
+            
+            // Redireciona para a loja, independentemente do path
+            window.location.href = storeURL;
+        } else {
+            // Se estiver sendo aberto no app, opcionalmente, redirecione de volta ao conteúdo específico
+            // window.location.href = "<URL do conteúdo no app>";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to Hadronlink Page...</p>
+</body>
+</html>
