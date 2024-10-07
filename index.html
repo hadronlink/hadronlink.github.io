@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HADRONLINK</title>
+    <script type="text/javascript">
+        // Verifica se o site está sendo aberto no navegador
+        if (!navigator.standalone && !window.matchMedia('(display-mode: standalone)').matches) {
+            // Redireciona para o link da loja de apps
+            window.location.href = "https://app.hadronlink.com/store";
+        }
+    </script>
     <style>
         body {
             background-color: white;
@@ -31,6 +38,6 @@
     </style>
 </head>
 <body>
-    <h1>HADRONLINK</h1>
+    <h1>Redirecting to Hadronlink Page...</h1>
 </body>
 </html>
